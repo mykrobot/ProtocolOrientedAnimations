@@ -28,6 +28,9 @@ public enum AnimatableDirection {
 protocol Moveable {}
 
 extension Moveable where Self: UIView {
+    
+    /// Shakes the view left and right. Credit to NatashaTheRobot in her Protocol Oriented Programming talk.
+    
     func shake() {
         let animation = CABasicAnimation(keyPath: "position")
         animation.duration = 0.05
@@ -46,17 +49,16 @@ extension Moveable where Self: UIView {
      */
     
     func move(direction: AnimatableDirection, points: CGFloat) {
-        let originalFrame = self.frame
         UIView.animateWithDuration(0.4) {
             switch direction {
             case .Right:
-                self.frame.origin.x = originalFrame.origin.x + points
+                self.frame.origin.x += points
             case .Left:
-                self.frame.origin.x = originalFrame.origin.x - points
+                self.frame.origin.x -= points
             case .Up:
-                self.frame.origin.y = originalFrame.origin.y - points
+                self.frame.origin.y -= points
             case .Down:
-                self.frame.origin.y = originalFrame.origin.y + points
+                self.frame.origin.y += points
             }
         }
     }
