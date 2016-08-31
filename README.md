@@ -1,12 +1,14 @@
 **Protocol Oriented Animations**
-========================
-----------
+-------------------
+
+
 This project provides some animations that can be used with any subclass of UIView.  See [NatashaTheRobot's talk on Protocol Oriented Programming](https://realm.io/news/appbuilders-natasha-muraschev-practical-protocol-oriented-programming/) for more information, and how to learn more about Protocol Oriented Programming.
 
-----------
+
 Getting Started
-----------
-----------
+---------------
+
+
 
  1. All you need to do is drag in the `MoveableProtocol.swift` into your project. 
  
