@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B43B4A2F1D777DC20084B3D2 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43B4A2E1D777DC20084B3D2 /* DemoViewController.swift */; };
+		B43B4A311D777DE60084B3D2 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43B4A301D777DE60084B3D2 /* CustomTextField.swift */; };
 		B48ED6341D70986F000434F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48ED6331D70986F000434F9 /* AppDelegate.swift */; };
 		B48ED6391D70986F000434F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48ED6371D70986F000434F9 /* Main.storyboard */; };
 		B48ED63B1D70986F000434F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48ED63A1D70986F000434F9 /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B43B4A2E1D777DC20084B3D2 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		B43B4A301D777DE60084B3D2 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		B48ED6301D70986F000434F9 /* ProtocolOrientedAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtocolOrientedAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48ED6331D70986F000434F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B48ED6381D70986F000434F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -35,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B43B4A321D777FC80084B3D2 /* Demo Files */ = {
+			isa = PBXGroup;
+			children = (
+				B43B4A2E1D777DC20084B3D2 /* DemoViewController.swift */,
+				B43B4A301D777DE60084B3D2 /* CustomTextField.swift */,
+			);
+			name = "Demo Files";
+			sourceTree = "<group>";
+		};
 		B48ED6271D70986F000434F9 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +69,7 @@
 			children = (
 				B48ED6331D70986F000434F9 /* AppDelegate.swift */,
 				B48ED6451D7098A7000434F9 /* MoveableProtocol.swift */,
+				B43B4A321D777FC80084B3D2 /* Demo Files */,
 				B48ED6371D70986F000434F9 /* Main.storyboard */,
 				B48ED63A1D70986F000434F9 /* Assets.xcassets */,
 				B48ED63C1D70986F000434F9 /* LaunchScreen.storyboard */,
@@ -135,6 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B43B4A311D777DE60084B3D2 /* CustomTextField.swift in Sources */,
+				B43B4A2F1D777DC20084B3D2 /* DemoViewController.swift in Sources */,
 				B48ED6461D7098A7000434F9 /* MoveableProtocol.swift in Sources */,
 				B48ED6341D70986F000434F9 /* AppDelegate.swift in Sources */,
 			);
@@ -288,6 +304,7 @@
 				B48ED6441D70986F000434F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
