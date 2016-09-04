@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B43B4A2F1D777DC20084B3D2 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43B4A2E1D777DC20084B3D2 /* DemoViewController.swift */; };
 		B43B4A311D777DE60084B3D2 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43B4A301D777DE60084B3D2 /* CustomTextField.swift */; };
+		B43B4A381D79EA3B0084B3D2 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43B4A371D79EA3B0084B3D2 /* CustomView.swift */; };
 		B48ED6341D70986F000434F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48ED6331D70986F000434F9 /* AppDelegate.swift */; };
 		B48ED6391D70986F000434F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48ED6371D70986F000434F9 /* Main.storyboard */; };
 		B48ED63B1D70986F000434F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48ED63A1D70986F000434F9 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		B43B4A2E1D777DC20084B3D2 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		B43B4A301D777DE60084B3D2 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		B43B4A371D79EA3B0084B3D2 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		B48ED6301D70986F000434F9 /* ProtocolOrientedAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtocolOrientedAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48ED6331D70986F000434F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B48ED6381D70986F000434F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -44,6 +46,7 @@
 			children = (
 				B43B4A2E1D777DC20084B3D2 /* DemoViewController.swift */,
 				B43B4A301D777DE60084B3D2 /* CustomTextField.swift */,
+				B43B4A371D79EA3B0084B3D2 /* CustomView.swift */,
 			);
 			name = "Demo Files";
 			sourceTree = "<group>";
@@ -88,6 +91,7 @@
 				B48ED62C1D70986F000434F9 /* Sources */,
 				B48ED62D1D70986F000434F9 /* Frameworks */,
 				B48ED62E1D70986F000434F9 /* Resources */,
+				B43B4A391D79EAE40084B3D2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -144,11 +148,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B43B4A391D79EAE40084B3D2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "TAGS=\"TODO:|FIXME:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B48ED62C1D70986F000434F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B43B4A381D79EA3B0084B3D2 /* CustomView.swift in Sources */,
 				B43B4A311D777DE60084B3D2 /* CustomTextField.swift in Sources */,
 				B43B4A2F1D777DC20084B3D2 /* DemoViewController.swift in Sources */,
 				B48ED6461D7098A7000434F9 /* MoveableProtocol.swift in Sources */,
