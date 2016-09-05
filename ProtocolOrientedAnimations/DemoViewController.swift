@@ -24,6 +24,8 @@ class DemoViewController: UIViewController {
         roundCornersOnSubMenu()
     }
     
+    // MARK: - SubMenu Methods
+    
     private func roundCornersOnSubMenu() {
         let views = [firstView, secondView, thirdView]
         for view in views {
@@ -32,7 +34,7 @@ class DemoViewController: UIViewController {
         }
     }
     
-    @IBAction func toggleSubMenu(sender: AnyObject) {
+    @IBAction private func toggleSubMenu(sender: AnyObject) {
         if subMenuShowing {
             hideSubMenu()
         } else {
@@ -59,15 +61,17 @@ class DemoViewController: UIViewController {
         
     }
     
-    @IBAction func shakeButtonTapped(sender: AnyObject) {
+    // MARK: - TextField Animation Methods
+    
+    @IBAction private func shakeButtonTapped(sender: AnyObject) {
         demoTextField.shake()
     }
     
-    @IBAction func moveLeftButtonTapped(sender: AnyObject) {
+    @IBAction private func moveLeftButtonTapped(sender: AnyObject) {
         demoTextField.move(.Left, points: 600)
     }
     
-    @IBAction func moveRightButtonTapeed(sender: AnyObject) {
+    @IBAction private func moveRightButtonTapeed(sender: AnyObject) {
         demoTextField.move(.Right, points: 600)
     }
 }
